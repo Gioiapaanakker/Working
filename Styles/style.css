@@ -1,0 +1,244 @@
+
+body{
+  margin: 0;
+  padding: 4pt;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+
+main{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: rgba(0,0,0,0.2); 
+  padding-top: 200px;
+  
+}
+
+h1{
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 20pt;
+  padding: 0pt;
+  text-decoration: none;
+
+}
+
+h2{
+  font-size: 25pt;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h3{
+  font-size: 15pt;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h4{
+  font-size: 30pt;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+p{
+  font-size: 12pt;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: inherit;
+}
+   
+ 
+/*-------------------------------- INLOG ---------------------------------*/
+ 
+input{
+  font-size: 120%;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 5px 5px 30px;
+
+}
+
+
+/*---------------------------- Overzicht foto's ---------------------------------------*/
+
+.container{
+  width: 90%;
+  background: black ;
+  flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+  margin: 8%;
+}
+
+.container .box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: red;
+  margin: 30px;
+  box-sizing: border-box;
+}
+
+
+article{
+ color: white;
+}
+
+.container .box article{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.4);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+  text-align: center;
+  margin: 10%;
+}
+
+.container .box:hover article{
+  transform: scaleY(1);
+
+}
+
+
+
+/*-------------------------------------SCROLLING PICS---------------------------------*/
+
+.container2{
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-bottom: 30%;
+  background: red;
+  border: solid 10px white;
+}
+
+.slide_img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide_img img{
+  width: 100%;
+  height: 100%;
+}
+
+#i1, #i2,  #i3{
+  display: none;
+}
+
+.pre, .nxt{
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99;
+  cursor: pointer;
+}
+
+.pre{
+  left: 0;
+}
+
+.nxt{
+  right: 0;
+}
+
+.slide_img{
+  z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+  z-index: 9;
+}
+
+
+
+/*-----------------------------------ANDERE LOCATIES-------------------------------------*/
+
+
+table {
+  border-spacing: 1px;
+  color: white;
+  font-size: 15pt;
+  margin: 10%;
+}
+
+
+
+th, td {
+  padding: 50px 30px 5px 10px;
+  border-spacing: 0px;
+  font-size: 100%;
+}
+
+th, td {
+  text-align: middle;
+  background-color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+
+/*------------------------------------------MENUKNOP-----------------------------*/
+
+
+ .menubutton {
+  display: block;
+  width: 100px;
+  height: 26px;
+  margin: 0px 20px 0px 0px;
+  padding: 4px 0px 0px 0px;
+  border-radius: 10px;
+  background-color: red;
+  color: #FFFFFF;
+  font-weight: normal;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*------------------------------------------ROUTE EN REVIEW KNOP-----------------------------*/
+
+.navigation{
+ display: flex;
+ padding-bottom: 2%; 
+ font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------------------------------FOOTER---------------------------*/
+
+footer{
+  text-align: right;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10pt;
+}
+
+
